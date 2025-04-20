@@ -1,0 +1,97 @@
+/* 🌟 General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1e1e1e, #2c2c2c);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🎨 Glassmorphism Card */
+.stopwatch-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* ✨ Neon Glow Timer */
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+/* 🏆 Custom Buttons */
+button {
+  background: linear-gradient(135deg, #ff6b6b, #ff4d4d);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  margin: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(255, 77, 77, 0.25);
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(255, 77, 77, 0.35);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* 🎯 Lap Section */
+#laps {
+  list-style: none;
+  padding: 0;
+}
+
+#laps li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.12);
+}
+
+/* 🌗 Theme Mode */
+.light-mode {
+  background: linear-gradient(120deg, #ffffff, #f0f0f0);
+  color: black;
+}
+
+.dark-mode {
+  background: linear-gradient(120deg, #1e1e1e, #2c2c2c);
+  color: white;
+}
+/* 🌙 Floating Dark Mode Button */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .theme-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+  
